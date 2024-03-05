@@ -1,0 +1,788 @@
+# depslib dependency file v1.0
+1706084494 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\startup_stm32f103xb.s
+
+1678699683 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\event_groups.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"task.h"
+	"timers.h"
+	"event_groups.h"
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\include\freertos.h
+	<stddef.h>
+	<stdint.h>
+	"FreeRTOSConfig.h"
+	"projdefs.h"
+	"portable.h"
+	<reent.h>
+
+1707816348 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\include\freertosconfig.h
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\include\projdefs.h
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\include\portable.h
+	"deprecated_definitions.h"
+	"portmacro.h"
+	"mpu_wrappers.h"
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\include\deprecated_definitions.h
+	"..\..\Source\portable\owatcom\16bitdos\pc\portmacro.h"
+	"..\..\Source\portable\owatcom\16bitdos\flsh186\portmacro.h"
+	"../portable/GCC/ATMega323/portmacro.h"
+	"../portable/IAR/ATMega323/portmacro.h"
+	"../../Source/portable/MPLAB/PIC24_dsPIC/portmacro.h"
+	"../../Source/portable/MPLAB/PIC24_dsPIC/portmacro.h"
+	"../../Source/portable/MPLAB/PIC18F/portmacro.h"
+	"../../Source/portable/MPLAB/PIC32MX/portmacro.h"
+	"libFreeRTOS/Include/portmacro.h"
+	"../../Source/portable/SDCC/Cygnal/portmacro.h"
+	"../../Source/portable/GCC/ARM7_LPC2000/portmacro.h"
+	"portmacro.h"
+	"../../Source/portable/GCC/ARM7_LPC23xx/portmacro.h"
+	"..\..\Source\portable\IAR\MSP430\portmacro.h"
+	"../../Source/portable/GCC/MSP430F449/portmacro.h"
+	"../../Source/portable/Rowley/MSP430F449/portmacro.h"
+	"..\..\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h"
+	"../../Source/portable/GCC/ARM7_AT91SAM7S/portmacro.h"
+	"..\..\Source\portable\IAR\AtmelSAM7S64\portmacro.h"
+	"..\..\Source\portable\IAR\AtmelSAM9XE\portmacro.h"
+	"..\..\Source\portable\IAR\LPC2000\portmacro.h"
+	"..\..\Source\portable\IAR\STR71x\portmacro.h"
+	"..\..\Source\portable\IAR\STR75x\portmacro.h"
+	"..\..\Source\portable\GCC\STR75x\portmacro.h"
+	"..\..\Source\portable\IAR\STR91x\portmacro.h"
+	"../../Source/portable/GCC/H8S2329/portmacro.h"
+	"../../Source/portable/GCC/ARM7_AT91FR40008/portmacro.h"
+	"../../Source/portable/RVDS/ARM_CM3/portmacro.h"
+	"../../Source/portable/GCC/ARM_CM3/portmacro.h"
+	"../../Source/portable/GCC/ARM_CM3/portmacro.h"
+	"../../Source/portable/IAR/ARM_CM3/portmacro.h"
+	"../../Source/portable/IAR/ARM_CM3/portmacro.h"
+	"../../Source/portable/CodeWarrior/HCS12/portmacro.h"
+	"../../Source/portable/GCC/MicroBlaze/portmacro.h"
+	"..\..\Source\portable\Paradigm\Tern_EE\small\portmacro.h"
+	"../../Source/portable/GCC/HCS12/portmacro.h"
+	"../../Source/portable/GCC/MCF5235/portmacro.h"
+	"../../../Source/portable/GCC/ColdFire_V2/portmacro.h"
+	"../../Source/portable/CodeWarrior/ColdFire_V2/portmacro.h"
+	"../../Source/portable/GCC/PPC405_Xilinx/portmacro.h"
+	"../../Source/portable/GCC/PPC440_Xilinx/portmacro.h"
+	"..\..\Source\portable\Softune\MB96340\portmacro.h"
+	"frconfig.h"
+	"..\portable\BCC\16BitDOS\PC\prtmacro.h"
+	"frconfig.h"
+	"..\portable\BCC\16BitDOS\flsh186\prtmacro.h"
+	"portmacro.h"
+	"portmacro.h"
+	"portmacro.h"
+	"portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/V850ES/portmacro.h"
+	"../../Source/portable/IAR/78K0R/portmacro.h"
+	"../../Source/portable/IAR/78K0R/portmacro.h"
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\include\portmacro.h
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\include\mpu_wrappers.h
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\include\task.h
+	"list.h"
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\include\list.h
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\include\timers.h
+	"task.h"
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\include\event_groups.h
+	"timers.h"
+
+1678699683 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\heap_1.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"task.h"
+
+1678699683 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\list.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"list.h"
+
+1678699683 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\port.c
+	"FreeRTOS.h"
+	"task.h"
+
+1678699683 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\queue.c
+	<stdlib.h>
+	<string.h>
+	"FreeRTOS.h"
+	"task.h"
+	"queue.h"
+	"croutine.h"
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\include\queue.h
+	"task.h"
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\include\croutine.h
+	"list.h"
+
+1678699683 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\stream_buffer.c
+	<stdint.h>
+	<string.h>
+	"FreeRTOS.h"
+	"task.h"
+	"stream_buffer.h"
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\include\stream_buffer.h
+
+1678699683 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\tasks.c
+	<stdlib.h>
+	<string.h>
+	"FreeRTOS.h"
+	"task.h"
+	"timers.h"
+	"stack_macros.h"
+	<stdio.h>
+	"tasks_test_access_functions.h"
+	"freertos_tasks_c_additions.h"
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\include\stack_macros.h
+
+1678699683 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\timers.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"task.h"
+	"queue.h"
+	"timers.h"
+
+1706084494 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\src\stm32f1xx_ll_adc.c
+	"stm32f1xx_ll_adc.h"
+	"stm32f1xx_ll_bus.h"
+	"stm32_assert.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\ll\inc\stm32f1xx_ll_adc.h
+	"stm32f1xx.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\inc\stm32f1xx.h
+	"stm32f100xb.h"
+	"stm32f100xe.h"
+	"stm32f101x6.h"
+	"stm32f101xb.h"
+	"stm32f101xe.h"
+	"stm32f101xg.h"
+	"stm32f102x6.h"
+	"stm32f102xb.h"
+	"stm32f103x6.h"
+	"stm32f103xb.h"
+	"stm32f103xe.h"
+	"stm32f103xg.h"
+	"stm32f105xc.h"
+	"stm32f107xc.h"
+	"stm32f1xx_hal.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\inc\stm32f103xb.h
+	"core_cm3.h"
+	"system_stm32f1xx.h"
+	<stdint.h>
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\cmsis\core_cm3.h
+	<stdint.h>
+	"cmsis_version.h"
+	"cmsis_compiler.h"
+	"mpu_armv7.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\cmsis\cmsis_version.h
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\cmsis\cmsis_compiler.h
+	<stdint.h>
+	"cmsis_armcc.h"
+	"cmsis_armclang_ltm.h"
+	"cmsis_armclang.h"
+	"cmsis_gcc.h"
+	<cmsis_iccarm.h>
+	<cmsis_ccs.h>
+	<cmsis_csm.h>
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\cmsis\cmsis_gcc.h
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\cmsis\mpu_armv7.h
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\inc\system_stm32f1xx.h
+
+1688038601 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\stm32f1xx_hal_driver\inc\stm32f1xx_hal.h
+	"stm32f1xx_hal_conf.h"
+
+1678699684 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\stm32f1xx_hal_conf.h
+	"stm32f1xx_hal_rcc.h"
+	"stm32f1xx_hal_gpio.h"
+	"stm32f1xx_hal_exti.h"
+	"stm32f1xx_hal_dma.h"
+	"stm32f1xx_hal_eth.h"
+	"stm32f1xx_hal_can.h"
+	"Legacy/stm32f1xx_hal_can_legacy.h"
+	"stm32f1xx_hal_cec.h"
+	"stm32f1xx_hal_cortex.h"
+	"stm32f1xx_hal_adc.h"
+	"stm32f1xx_hal_crc.h"
+	"stm32f1xx_hal_dac.h"
+	"stm32f1xx_hal_flash.h"
+	"stm32f1xx_hal_sram.h"
+	"stm32f1xx_hal_nor.h"
+	"stm32f1xx_hal_i2c.h"
+	"stm32f1xx_hal_i2s.h"
+	"stm32f1xx_hal_iwdg.h"
+	"stm32f1xx_hal_pwr.h"
+	"stm32f1xx_hal_rtc.h"
+	"stm32f1xx_hal_pccard.h"
+	"stm32f1xx_hal_sd.h"
+	"stm32f1xx_hal_nand.h"
+	"stm32f1xx_hal_spi.h"
+	"stm32f1xx_hal_tim.h"
+	"stm32f1xx_hal_uart.h"
+	"stm32f1xx_hal_usart.h"
+	"stm32f1xx_hal_irda.h"
+	"stm32f1xx_hal_smartcard.h"
+	"stm32f1xx_hal_wwdg.h"
+	"stm32f1xx_hal_pcd.h"
+	"stm32f1xx_hal_hcd.h"
+	"stm32f1xx_hal_mmc.h"
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\stm32f1xx_hal_driver\inc\stm32f1xx_hal_pcd.h
+	"stm32f1xx_ll_usb.h"
+	"stm32f1xx_hal_pcd_ex.h"
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\stm32f1xx_hal_driver\inc\stm32f1xx_ll_usb.h
+	"stm32f1xx_hal_def.h"
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\stm32f1xx_hal_driver\inc\stm32f1xx_hal_def.h
+	"stm32f1xx.h"
+	"Legacy/stm32_hal_legacy.h"
+	<stddef.h>
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\stm32f1xx_hal_driver\inc\legacy\stm32_hal_legacy.h
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\stm32f1xx_hal_driver\inc\stm32f1xx_hal_pcd_ex.h
+	"stm32f1xx_hal_def.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\ll\inc\stm32f1xx_ll_bus.h
+	"stm32f1xx.h"
+
+1706084494 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\src\stm32f1xx_ll_crc.c
+	"stm32f1xx_ll_crc.h"
+	"stm32f1xx_ll_bus.h"
+	"stm32_assert.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\ll\inc\stm32f1xx_ll_crc.h
+	"stm32f1xx.h"
+
+1706084494 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\src\stm32f1xx_ll_dac.c
+	"stm32f1xx_ll_dac.h"
+	"stm32f1xx_ll_bus.h"
+	"stm32_assert.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\ll\inc\stm32f1xx_ll_dac.h
+	"stm32f1xx.h"
+
+1706084494 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\src\stm32f1xx_ll_dma.c
+	"stm32f1xx_ll_dma.h"
+	"stm32f1xx_ll_bus.h"
+	"stm32_assert.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\ll\inc\stm32f1xx_ll_dma.h
+	"stm32f1xx.h"
+
+1706084494 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\src\stm32f1xx_ll_exti.c
+	"stm32f1xx_ll_exti.h"
+	"stm32_assert.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\ll\inc\stm32f1xx_ll_exti.h
+	"stm32f1xx.h"
+
+1706084494 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\src\stm32f1xx_ll_fsmc.c
+	"stm32f1xx_hal.h"
+
+1706084494 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\src\stm32f1xx_ll_gpio.c
+	"stm32f1xx_ll_gpio.h"
+	"stm32f1xx_ll_bus.h"
+	"stm32_assert.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\ll\inc\stm32f1xx_ll_gpio.h
+	"stm32f1xx.h"
+
+1706084494 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\src\stm32f1xx_ll_i2c.c
+	"stm32f1xx_ll_i2c.h"
+	"stm32f1xx_ll_bus.h"
+	"stm32f1xx_ll_rcc.h"
+	"stm32_assert.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\ll\inc\stm32f1xx_ll_i2c.h
+	"stm32f1xx.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\ll\inc\stm32f1xx_ll_rcc.h
+	"stm32f1xx.h"
+
+1706084494 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\src\stm32f1xx_ll_pwr.c
+	"stm32f1xx_ll_pwr.h"
+	"stm32f1xx_ll_bus.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\ll\inc\stm32f1xx_ll_pwr.h
+	"stm32f1xx.h"
+
+1706084494 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\src\stm32f1xx_ll_rcc.c
+	"stm32f1xx_ll_rcc.h"
+	"stm32_assert.h"
+
+1706084494 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\src\stm32f1xx_ll_rtc.c
+	"stm32f1xx_ll_rtc.h"
+	"stm32f1xx_ll_cortex.h"
+	"stm32_assert.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\ll\inc\stm32f1xx_ll_rtc.h
+	"stm32f1xx.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\ll\inc\stm32f1xx_ll_cortex.h
+	"stm32f1xx.h"
+
+1706084494 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\src\stm32f1xx_ll_sdmmc.c
+	"stm32f1xx_hal.h"
+
+1706084494 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\src\stm32f1xx_ll_spi.c
+	"stm32f1xx_ll_spi.h"
+	"stm32f1xx_ll_bus.h"
+	"stm32f1xx_ll_rcc.h"
+	"stm32_assert.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\ll\inc\stm32f1xx_ll_spi.h
+	"stm32f1xx.h"
+
+1706084494 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\src\stm32f1xx_ll_tim.c
+	"stm32f1xx_ll_tim.h"
+	"stm32f1xx_ll_bus.h"
+	"stm32_assert.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\ll\inc\stm32f1xx_ll_tim.h
+	"stm32f1xx.h"
+
+1706084494 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\src\stm32f1xx_ll_usart.c
+	"stm32f1xx_ll_usart.h"
+	"stm32f1xx_ll_rcc.h"
+	"stm32f1xx_ll_bus.h"
+	"stm32_assert.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\ll\inc\stm32f1xx_ll_usart.h
+	"stm32f1xx.h"
+
+1706084494 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\src\stm32f1xx_ll_usb.c
+	"stm32f1xx_hal.h"
+
+1706084494 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\src\stm32f1xx_ll_utils.c
+	"stm32f1xx_ll_rcc.h"
+	"stm32f1xx_ll_utils.h"
+	"stm32f1xx_ll_system.h"
+	"stm32_assert.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\ll\inc\stm32f1xx_ll_utils.h
+	"stm32f1xx.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\ll\inc\stm32f1xx_ll_system.h
+	"stm32f1xx.h"
+
+1707406231 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\stm32_usb_device_library\class\cdc\src\usbd_cdc.c
+	"usbd_cdc.h"
+	"usbd_ctlreq.h"
+	"stm32f1xx_hal.h"
+
+1707404998 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\stm32_usb_device_library\class\cdc\inc\usbd_cdc.h
+	"usbd_ioreq.h"
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\stm32_usb_device_library\core\inc\usbd_ioreq.h
+	"usbd_def.h"
+	"usbd_core.h"
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\stm32_usb_device_library\core\inc\usbd_def.h
+	"usbd_conf.h"
+
+1707405067 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\usb_device\target\usbd_conf.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"main.h"
+	"stm32f1xx.h"
+
+1707816322 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\main.h
+	"FreeRTOS.h"
+	"timers.h"
+	"clock.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\ll\inc\stm32f1xx_ll_conf.h
+	"stm32f1xx.h"
+	"stm32f1xx_ll_adc.h"
+	"stm32f1xx_ll_bus.h"
+	"stm32f1xx_ll_cortex.h"
+	"stm32f1xx_ll_crc.h"
+	"stm32f1xx_ll_dac.h"
+	"stm32f1xx_ll_dma.h"
+	"stm32f1xx_ll_exti.h"
+	"stm32f1xx_ll_fsmc.h"
+	"stm32f1xx_ll_gpio.h"
+	"stm32f1xx_ll_i2c.h"
+	"stm32f1xx_ll_iwdg.h"
+	"stm32f1xx_ll_pwr.h"
+	"stm32f1xx_ll_rcc.h"
+	"stm32f1xx_ll_rtc.h"
+	"stm32f1xx_ll_sdmmc.h"
+	"stm32f1xx_ll_spi.h"
+	"stm32f1xx_ll_system.h"
+	"stm32f1xx_ll_tim.h"
+	"stm32f1xx_ll_usart.h"
+	"stm32f1xx_ll_usb.h"
+	"stm32f1xx_ll_utils.h"
+	"stm32f1xx_ll_wwdg.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\ll\inc\stm32f1xx_ll_fsmc.h
+	"stm32f1xx_hal_def.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\ll\inc\stm32f1xx_ll_iwdg.h
+	"stm32f1xx.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\ll\inc\stm32f1xx_ll_sdmmc.h
+	"stm32f1xx_hal_def.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\ll\inc\stm32f1xx_ll_usb.h
+	"stm32f1xx_hal_def.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\ll\inc\stm32f1xx_ll_wwdg.h
+	"stm32f1xx.h"
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\stm32_usb_device_library\core\inc\usbd_core.h
+	"usbd_conf.h"
+	"usbd_def.h"
+	"usbd_ioreq.h"
+	"usbd_ctlreq.h"
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\stm32_usb_device_library\core\inc\usbd_ctlreq.h
+	"usbd_def.h"
+
+1678699683 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\stm32_usb_device_library\class\msc\src\usbd_msc.c
+	"usbd_msc.h"
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\stm32_usb_device_library\class\msc\inc\usbd_msc.h
+	"usbd_msc_bot.h"
+	"usbd_msc_scsi.h"
+	"usbd_ioreq.h"
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\stm32_usb_device_library\class\msc\inc\usbd_msc_bot.h
+	"usbd_core.h"
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\stm32_usb_device_library\class\msc\inc\usbd_msc_scsi.h
+	"usbd_def.h"
+
+1678699683 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\stm32_usb_device_library\class\msc\src\usbd_msc_bot.c
+	"usbd_msc_bot.h"
+	"usbd_msc.h"
+	"usbd_msc_scsi.h"
+	"usbd_ioreq.h"
+
+1678699683 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\stm32_usb_device_library\class\msc\src\usbd_msc_data.c
+	"usbd_msc_data.h"
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\stm32_usb_device_library\class\msc\inc\usbd_msc_data.h
+	"usbd_conf.h"
+
+1678699683 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\stm32_usb_device_library\class\msc\src\usbd_msc_scsi.c
+	"usbd_msc_bot.h"
+	"usbd_msc_scsi.h"
+	"usbd_msc.h"
+	"usbd_msc_data.h"
+
+1678699683 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\stm32_usb_device_library\core\src\usbd_core.c
+	"usbd_core.h"
+
+1707141852 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\stm32_usb_device_library\core\src\usbd_ctlreq.c
+	"usbd_ctlreq.h"
+	"usbd_ioreq.h"
+
+1678699683 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\stm32_usb_device_library\core\src\usbd_ioreq.c
+	"usbd_ioreq.h"
+
+1678699683 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\stm32f1xx_hal_driver\src\stm32f1xx_hal_pcd.c
+	"stm32f1xx_hal.h"
+
+1678699683 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\stm32f1xx_hal_driver\src\stm32f1xx_hal_pcd_ex.c
+	"stm32f1xx_hal.h"
+
+1678699683 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\stm32f1xx_hal_driver\src\stm32f1xx_ll_usb.c
+	"stm32f1xx_hal.h"
+
+1706097581 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\clock.c
+	"stm32f1xx_ll_rcc.h"
+	"clock.h"
+
+1706084525 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\ebmon.c
+	"ebmon.h"
+
+1706084525 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\ebmon.h
+	<stdint.h>
+	<stdio.h>
+
+1706095901 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\eeprom_emulation.c
+	<eeprom_emulation.h>
+	<stm32f1xx.h>
+	<stdint.h>
+	"FreeRTOS.h"
+	"semphr.h"
+
+1680139096 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\eeprom_emulation.h
+	<stdint.h>
+
+1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\include\semphr.h
+	"queue.h"
+
+1707911371 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\main.c
+	"main.h"
+	<modbus_reg.h>
+	<modbus_hard.h>
+	<optic_current_data.h>
+	"clock.h"
+	<stdbool.h>
+	"inttypes.h"
+	"system_stm32f1xx.h"
+	"stm32f1xx.h"
+	<stdio.h>
+	"FreeRTOS.h"
+	"task.h"
+	"queue.h"
+	"semphr.h"
+	"timers.h"
+	"limits.h"
+	"IO.h"
+	<string.h>
+	"stm32f1xx_hal.h"
+	"usb_device.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\inc\stm32f1xx_ll_adc.h
+	"stm32f1xx.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\inc\stm32f1xx_ll_bus.h
+	"stm32f1xx.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\inc\stm32f1xx_ll_crc.h
+	"stm32f1xx.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\inc\stm32f1xx_ll_dac.h
+	"stm32f1xx.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\inc\stm32f1xx_ll_dma.h
+	"stm32f1xx.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\inc\stm32f1xx_ll_exti.h
+	"stm32f1xx.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\inc\stm32f1xx_ll_gpio.h
+	"stm32f1xx.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\inc\stm32f1xx_ll_i2c.h
+	"stm32f1xx.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\inc\stm32f1xx_ll_rcc.h
+	"stm32f1xx.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\inc\stm32f1xx_ll_pwr.h
+	"stm32f1xx.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\inc\stm32f1xx_ll_rtc.h
+	"stm32f1xx.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\inc\stm32f1xx_ll_cortex.h
+	"stm32f1xx.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\inc\stm32f1xx_ll_spi.h
+	"stm32f1xx.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\inc\stm32f1xx_ll_tim.h
+	"stm32f1xx.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\inc\stm32f1xx_ll_usart.h
+	"stm32f1xx.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\inc\stm32f1xx_ll_utils.h
+	"stm32f1xx.h"
+
+1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\ll\inc\stm32f1xx_ll_system.h
+	"stm32f1xx.h"
+
+1706087690 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\clock.h
+
+1707736561 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\io.c
+	<stdint.h>
+	<stdbool.h>
+	"stm32f1xx_ll_usart.h"
+	<stm32f1xx.h>
+	<IO.h>
+	<main.h>
+
+1707736561 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\io.h
+	<stdint.h>
+	<stdbool.h>
+	<stm32f1xx.h>
+
+1679994391 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\modbus_reg.h
+	<stdint.h>
+	"modbus_config.h"
+	"modbus.h"
+
+1707838338 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\modbus_config.h
+	<stdint.h>
+	"main.h"
+	"modbus_hard.h"
+	"optic_current_data.h"
+
+1707141777 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\modbus_hard.h
+	"FreeRTOS.h"
+	"semphr.h"
+	"task.h"
+	"queue.h"
+	"timers.h"
+
+1680157907 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\modbus.h
+	<stdint.h>
+	<stdbool.h>
+	"modbus_config.h"
+
+1678699684 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\usb_device\emfat.h
+	<stddef.h>
+	<stdint.h>
+	<string.h>
+	<stdbool.h>
+
+1678699684 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\usb_device\app\usb_device.h
+	"stm32f1xx.h"
+	"stm32f1xx_hal.h"
+	"usbd_def.h"
+
+1688038601 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\modbus.c
+	"modbus.h"
+	"modbus_config.h"
+	<stdio.h>
+	"modbus_reg.h"
+
+1707293551 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\modbus_hard.c
+	"modbus_hard.h"
+	"modbus.h"
+	"modbus_reg.h"
+	"stm32f1xx_ll_usart.h"
+	"FreeRTOS.h"
+	"semphr.h"
+	"task.h"
+	"queue.h"
+	"timers.h"
+	"IO.h"
+	"main.h"
+	<eeprom_emulation.h>
+	<stdbool.h>
+	"inttypes.h"
+	<stdio.h>
+	<string.h>
+	"usbd_cdc_if.h"
+
+1678699684 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\usb_device\app\usbd_cdc_if.h
+	"usbd_cdc.h"
+
+1688038601 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\modbus_reg.c
+	"modbus_config.h"
+	"modbus_reg.h"
+	"modbus.h"
+
+1678699683 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\croutine.c
+	"FreeRTOS.h"
+	"task.h"
+	"croutine.h"
+
+1706084494 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\system_stm32f1xx.c
+	"stm32f1xx.h"
+
+1707293655 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\usb_device\app.c
+	"main.h"
+	"emfat.h"
+	"stdlib.h"
+
+1707404998 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\usb_device\app\usb_device.c
+	"usb_device.h"
+	"usbd_core.h"
+	"usbd_desc.h"
+	"usbd_cdc.h"
+	"usbd_cdc_if.h"
+
+1707407328 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\usb_device\app\usbd_desc.h
+	"usbd_def.h"
+
+1678699684 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\usb_device\usbd_msc_cdc.h
+	"usbd_ioreq.h"
+
+1678699684 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\usb_device\app\usbd_storage_if.h
+	"usbd_msc.h"
+
+1678699684 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\usb_device\app\usbd_cdc_if.c
+	"usbd_cdc_if.h"
+	"modbus_hard.h"
+
+1707407445 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\usb_device\app\usbd_desc.c
+	"usbd_core.h"
+	"usbd_desc.h"
+	"usbd_conf.h"
+	"stm32f1xx_hal.h"
+	"stm32f1xx.h"
+
+1678699684 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\usb_device\app\usbd_storage_if.c
+	"usbd_storage_if.h"
+	"emfat.h"
+
+1678699684 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\usb_device\emfat.c
+	"emfat.h"
+
+1707405602 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\usb_device\target\usbd_conf.c
+	"stm32f1xx.h"
+	"stm32f1xx_hal.h"
+	"usbd_def.h"
+	"usbd_core.h"
+	"usbd_cdc.h"
+	"main.h"
+
+1678699684 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\usb_device\usbd_msc_cdc.c
+	"usbd_msc_cdc.h"
+	"usbd_desc.h"
+	"usbd_ctlreq.h"
+	"usbd_cdc.h"
+	"usbd_msc.h"
+
+1707207062 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\dma_103.c
+	<dma_103.h>
+
+1707206859 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\dma_103.h
+	<stdbool.h>
+	"inttypes.h"
+	"system_stm32f1xx.h"
+	"stm32f1xx.h"
+	<stdio.h>
+
+1707914039 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\optic_current_data.h
+
+1708354814 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\optic_current_data.c
+	"main.h"
+	<modbus_reg.h>
+	<modbus_hard.h>
+	<stdbool.h>
+	"inttypes.h"
+	"system_stm32f1xx.h"
+	"stm32f1xx.h"
+	<stdio.h>
+	"FreeRTOS.h"
+	"task.h"
+	"queue.h"
+	"semphr.h"
+	"timers.h"
+	"limits.h"
+	"IO.h"
+	"optic_current_data.h"
+

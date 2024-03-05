@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<EmBitz_project_file>
+	<EmBitzVersion release="2.62" revision="0" />
+	<FileVersion major="2" minor="0" />
+	<Project>
+		<Option title="raspberry_extension_board" />
+		<Option pch_mode="2" />
+		<Option compiler="armgcc_eb" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\raspberry_extension_board.elf" />
+				<Option object_output="obj\Debug\" />
+				<Option type="0" />
+				<Option compiler="armgcc_eb" />
+				<Option projectDeviceOptionsRelation="0" />
+				<Compiler>
+					<Add option="-g2" />
+					<Add option="-O0" />
+					<Add option="-Wall" />
+					<Add option="-fdata-sections" />
+					<Add option="-ffunction-sections" />
+					<Add symbol="DEBUG_TARGET" />
+				</Compiler>
+				<Cpp>
+					<Add option="-g2" />
+					<Add option="-O0" />
+					<Add option="-Wall" />
+					<Add option="-fdata-sections" />
+					<Add option="-ffunction-sections" />
+				</Cpp>
+				<Assembler>
+					<Add option="-Wa,--gdwarf-2" />
+				</Assembler>
+				<Linker>
+					<Add option="-Wl,--gc-sections" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\raspberry_extension_board.elf" />
+				<Option object_output="obj\Release\" />
+				<Option type="0" />
+				<Option create_hex="1" />
+				<Option compiler="armgcc_eb" />
+				<Option projectDeviceOptionsRelation="0" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-g2" />
+					<Add option="-fdata-sections" />
+					<Add option="-ffunction-sections" />
+					<Add symbol="RELEASE_TARGET" />
+				</Compiler>
+				<Cpp>
+					<Add option="-O2" />
+					<Add option="-g2" />
+					<Add option="-fdata-sections" />
+					<Add option="-ffunction-sections" />
+				</Cpp>
+				<Assembler>
+					<Add option="-Wa,--no-warn" />
+				</Assembler>
+				<Linker>
+					<Add option="-Wl,--gc-sections" />
+					<Add option="-flto" />
+				</Linker>
+				<ExtraCommands>
+					<Add after='arm-none-eabi-objcopy -O binary &quot;$(TARGET_OUTPUT_DIR)\$(TARGET_OUTPUT_BASENAME).elf&quot; &quot;$(TARGET_OUTPUT_DIR)\$(TARGET_OUTPUT_BASENAME).bin&quot;' />
+					<Mode before="0" />
+					<Mode after="0" />
+				</ExtraCommands>
+			</Target>
+		</Build>
+		<Device>
+			<Add option="$device=cortex-m3" />
+			<Add option="$lscript=./stm32f103c8_flash.ld" />
+			<Add option="$stack=0x0100" />
+			<Add option="$heap=0x0000" />
+		</Device>
+		<Compiler>
+			<Add option="-mfloat-abi=soft" />
+			<Add option="-fno-strict-aliasing" />
+			<Add symbol="ARM_MATH_CM3" />
+			<Add symbol="STM32F103" />
+			<Add symbol="STM32F103C8" />
+			<Add symbol="STM32F103xB" />
+			<Add symbol="USE_HAL_DRIVER" />
+			<Add symbol="USE_FULL_LL_DRIVER" />
+			<Add symbol="PROJECT_C" />
+			<Add symbol="xPortSysTickHandler=SysTick_Handler" />
+			<Add symbol="xPortPendSVHandler=PendSV_Handler" />
+			<Add symbol="vPortSVCHandler=SVC_Handler" />
+			<Add directory=".\cmsis" />
+			<Add directory=".\inc" />
+			<Add directory=".\src" />
+			<Add directory=".\HAL\inc" />
+			<Add directory=".\HAL\src" />
+			<Add directory=".\LL\inc" />
+			<Add directory=".\LL\src" />
+		</Compiler>
+		<Cpp>
+			<Add option="-mfloat-abi=soft" />
+			<Add option="-fno-strict-aliasing" />
+		</Cpp>
+		<Linker>
+			<Add option="-eb_lib=n" />
+			<Add option="-eb_start_files" />
+		</Linker>
+		<Unit filename="cmsis\cmsis_compiler.h" />
+		<Unit filename="cmsis\cmsis_gcc.h" />
+		<Unit filename="cmsis\cmsis_version.h" />
+		<Unit filename="cmsis\core_cm3.h" />
+		<Unit filename="cmsis\mpu_armv7.h" />
+		<Unit filename="cmsis\mpu_armv8.h" />
+		<Unit filename="cmsis\tz_context.h" />
+		<Unit filename="inc\stm32f103xb.h" />
+		<Unit filename="inc\stm32f1xx.h" />
+		<Unit filename="inc\system_stm32f1xx.h" />
+		<Unit filename="Libraries\FreeRTOS\croutine.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\FreeRTOS\event_groups.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\FreeRTOS\heap_1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\FreeRTOS\include\atomic.h" />
+		<Unit filename="Libraries\FreeRTOS\include\croutine.h" />
+		<Unit filename="Libraries\FreeRTOS\include\deprecated_definitions.h" />
+		<Unit filename="Libraries\FreeRTOS\include\event_groups.h" />
+		<Unit filename="Libraries\FreeRTOS\include\FreeRTOS.h" />
+		<Unit filename="Libraries\FreeRTOS\include\FreeRTOSConfig.h" />
+		<Unit filename="Libraries\FreeRTOS\include\list.h" />
+		<Unit filename="Libraries\FreeRTOS\include\message_buffer.h" />
+		<Unit filename="Libraries\FreeRTOS\include\mpu_prototypes.h" />
+		<Unit filename="Libraries\FreeRTOS\include\mpu_wrappers.h" />
+		<Unit filename="Libraries\FreeRTOS\include\portable.h" />
+		<Unit filename="Libraries\FreeRTOS\include\portmacro.h" />
+		<Unit filename="Libraries\FreeRTOS\include\projdefs.h" />
+		<Unit filename="Libraries\FreeRTOS\include\queue.h" />
+		<Unit filename="Libraries\FreeRTOS\include\semphr.h" />
+		<Unit filename="Libraries\FreeRTOS\include\stack_macros.h" />
+		<Unit filename="Libraries\FreeRTOS\include\StackMacros.h" />
+		<Unit filename="Libraries\FreeRTOS\include\stream_buffer.h" />
+		<Unit filename="Libraries\FreeRTOS\include\task.h" />
+		<Unit filename="Libraries\FreeRTOS\include\timers.h" />
+		<Unit filename="Libraries\FreeRTOS\list.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\FreeRTOS\port.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\FreeRTOS\queue.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\FreeRTOS\stream_buffer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\FreeRTOS\tasks.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\FreeRTOS\timers.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\LL\Inc\stm32f1xx_ll_adc.h" />
+		<Unit filename="Libraries\LL\Inc\stm32f1xx_ll_bus.h" />
+		<Unit filename="Libraries\LL\Inc\stm32f1xx_ll_conf.h" />
+		<Unit filename="Libraries\LL\Inc\stm32f1xx_ll_cortex.h" />
+		<Unit filename="Libraries\LL\Inc\stm32f1xx_ll_crc.h" />
+		<Unit filename="Libraries\LL\Inc\stm32f1xx_ll_dac.h" />
+		<Unit filename="Libraries\LL\Inc\stm32f1xx_ll_dma.h" />
+		<Unit filename="Libraries\LL\Inc\stm32f1xx_ll_exti.h" />
+		<Unit filename="Libraries\LL\Inc\stm32f1xx_ll_fsmc.h" />
+		<Unit filename="Libraries\LL\Inc\stm32f1xx_ll_gpio.h" />
+		<Unit filename="Libraries\LL\Inc\stm32f1xx_ll_i2c.h" />
+		<Unit filename="Libraries\LL\Inc\stm32f1xx_ll_iwdg.h" />
+		<Unit filename="Libraries\LL\Inc\stm32f1xx_ll_pwr.h" />
+		<Unit filename="Libraries\LL\Inc\stm32f1xx_ll_rcc.h" />
+		<Unit filename="Libraries\LL\Inc\stm32f1xx_ll_rtc.h" />
+		<Unit filename="Libraries\LL\Inc\stm32f1xx_ll_sdmmc.h" />
+		<Unit filename="Libraries\LL\Inc\stm32f1xx_ll_spi.h" />
+		<Unit filename="Libraries\LL\Inc\stm32f1xx_ll_system.h" />
+		<Unit filename="Libraries\LL\Inc\stm32f1xx_ll_tim.h" />
+		<Unit filename="Libraries\LL\Inc\stm32f1xx_ll_usart.h" />
+		<Unit filename="Libraries\LL\Inc\stm32f1xx_ll_utils.h" />
+		<Unit filename="Libraries\LL\Inc\stm32f1xx_ll_wwdg.h" />
+		<Unit filename="Libraries\LL\Src\stm32f1xx_ll_adc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\LL\Src\stm32f1xx_ll_crc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\LL\Src\stm32f1xx_ll_dac.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\LL\Src\stm32f1xx_ll_dma.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\LL\Src\stm32f1xx_ll_exti.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\LL\Src\stm32f1xx_ll_fsmc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\LL\Src\stm32f1xx_ll_gpio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\LL\Src\stm32f1xx_ll_i2c.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\LL\Src\stm32f1xx_ll_pwr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\LL\Src\stm32f1xx_ll_rcc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\LL\Src\stm32f1xx_ll_rtc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\LL\Src\stm32f1xx_ll_sdmmc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\LL\Src\stm32f1xx_ll_spi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\LL\Src\stm32f1xx_ll_tim.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\LL\Src\stm32f1xx_ll_usart.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\LL\Src\stm32f1xx_ll_utils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32_USB_Device_Library\Class\CDC\Inc\usbd_cdc.h" />
+		<Unit filename="Libraries\STM32_USB_Device_Library\Class\CDC\Src\usbd_cdc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32_USB_Device_Library\Core\Inc\usbd_core.h" />
+		<Unit filename="Libraries\STM32_USB_Device_Library\Core\Inc\usbd_ctlreq.h" />
+		<Unit filename="Libraries\STM32_USB_Device_Library\Core\Inc\usbd_def.h" />
+		<Unit filename="Libraries\STM32_USB_Device_Library\Core\Inc\usbd_ioreq.h" />
+		<Unit filename="Libraries\STM32_USB_Device_Library\Core\Src\usbd_core.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h" />
+		<Unit filename="Libraries\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h" />
+		<Unit filename="Libraries\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h" />
+		<Unit filename="Libraries\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd.h" />
+		<Unit filename="Libraries\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h" />
+		<Unit filename="Libraries\STM32F1xx_HAL_Driver\Inc\stm32f1xx_ll_usb.h" />
+		<Unit filename="Libraries\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pcd_ex.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Libraries\STM32F1xx_HAL_Driver\Src\stm32f1xx_ll_usb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\Clock.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\Clock.h" />
+		<Unit filename="src\dma_103.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\dma_103.h" />
+		<Unit filename="src\ebmon.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\ebmon.h" />
+		<Unit filename="src\eeprom_emulation.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\eeprom_emulation.h" />
+		<Unit filename="src\IO.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\IO.h" />
+		<Unit filename="src\main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\main.h" />
+		<Unit filename="src\modbus.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\modbus.h" />
+		<Unit filename="src\modbus_config.h" />
+		<Unit filename="src\modbus_hard.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\modbus_hard.h" />
+		<Unit filename="src\modbus_reg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\modbus_reg.h" />
+		<Unit filename="src\optic_current_data.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\optic_current_data.h" />
+		<Unit filename="src\startup_stm32f103xb.S">
+			<Option compilerVar="CC" />
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="src\stm32f1xx_hal_conf.h" />
+		<Unit filename="src\system_stm32f1xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\USB_DEVICE\App\usb_device.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\USB_DEVICE\App\usb_device.h" />
+		<Unit filename="src\USB_DEVICE\App\usbd_cdc_if.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\USB_DEVICE\App\usbd_cdc_if.h" />
+		<Unit filename="src\USB_DEVICE\App\usbd_desc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\USB_DEVICE\App\usbd_desc.h" />
+		<Unit filename="src\USB_DEVICE\Target\usbd_conf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src\USB_DEVICE\Target\usbd_conf.h" />
+		<Unit filename="stm32f103c8_flash.ld" />
+		<Unit filename="STM32F103xx.svd" />
+		<Extensions>
+			<code_completion />
+			<debugger>
+				<target_debugging_settings target="Debug">
+					<debug_interface description="STM32F103xx.svd" options="2" reg_filter="0" probe="STlink" device="stm32" speed="" bus_address="" serial="" defines="" scripts="" flash_size="" ram_size="" vcc_voltage="" verbose="4" unwind="2" rstType="0" use_jtag="false" disable_cache="false" enable_semi="false" close_eblink="false" gdb_reset="" gdb_reset_remote="reset;" gdb_before_conn="" gdb_after_conn="" use_remote="false" ip_address="" ip_port="" path="" executable="" start_server="false" arguments="" flash_verify="false" flash_run="false" />
+				</target_debugging_settings>
+				<target_debugging_settings target="Release">
+					<debug_interface description="STM32F103xx.svd" options="2" reg_filter="0" probe="stlink" device="stm32" speed="" bus_address="" serial="" defines="" scripts="" flash_size="" ram_size="" vcc_voltage="" verbose="4" unwind="2" rstType="0" use_jtag="false" disable_cache="false" enable_semi="false" close_eblink="false" gdb_reset="" gdb_reset_remote="reset;" gdb_before_conn="" gdb_after_conn="" use_remote="false" ip_address="" ip_port="" path="" executable="" start_server="false" arguments="" flash_verify="false" flash_run="false" />
+				</target_debugging_settings>
+			</debugger>
+			<envvars />
+		</Extensions>
+	</Project>
+</EmBitz_project_file>

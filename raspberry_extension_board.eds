@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<EmBitz_debug_session>
+	<debuggerLastSession>
+		<watches>
+			<watch key=" optic_data.alarm" format="0" array="0" start="0" count="0" expanded="0" live="0" />
+			<watch key="MBbuf_main[Reg_RS485_Modbus_Addr]" format="0" array="0" start="0" count="0" expanded="0" live="0" />
+			<watch key="X_DI" format="0" array="1" start="0" count="4" expanded="1" live="0" />
+			<watch key="adc1_data" format="1" array="1" start="0" count="12" expanded="0" live="0" />
+			<watch key="adc_intermediate_v" format="0" array="0" start="0" count="0" expanded="0" live="0" />
+			<watch key="adc_iteration_count" format="0" array="0" start="0" count="0" expanded="0" live="0" />
+			<watch key="discrete_adc1_2_filter" format="0" array="0" start="0" count="0" expanded="0" live="0" />
+			<watch key="discrete_adc2_1_volt_filt" format="0" array="0" start="0" count="0" expanded="0" live="0" />
+			<watch key="mbb-&gt;p_mb_buff" format="1" array="1" start="0" count="8" expanded="1" live="0" />
+			<watch key="optic_data.alarm" format="0" array="0" start="0" count="0" expanded="0" live="0" />
+			<watch key="optic_data.alarm_count" format="0" array="0" start="0" count="0" expanded="0" live="0" />
+			<watch key="optic_data.buf" format="0" array="1" start="0" count="9" expanded="0" live="0" />
+		</watches>
+		<memory_view address="0x0" locked="0" live="0" options="290" />
+	</debuggerLastSession>
+</EmBitz_debug_session>
