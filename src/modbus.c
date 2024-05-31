@@ -145,6 +145,7 @@ static bool frame_parse (MBStruct_t *mbb)
     {
     // Function code
 //--------------------------------------------------
+    case MB_FUNC_READ_INPUT_REGISTER:
     case MB_FUNC_READ_HOLDING_REGISTER:
         //		  03	0...LASTINDEX-1      0...125
         // addr  func    AddrHi  AddrLo  QuantHi  QuantLo  CRC CRC

@@ -16,7 +16,7 @@ typedef struct
     uint16_t		Default_Value;
     uint16_t		Min_Level;
     uint16_t		Max_Level_Mask;
-    uint32_t		Options;
+    uint16_t		Options;
 } RegParameters_t;
 
 #if (MB_REG_END_TO_END == 1)

@@ -73,6 +73,18 @@ void IO_SetLineActive(tIOLine Line, bool State)
 }
 
 //---------------------------------------------------------------------------------
+void IO_SetLineActiveExtern(tIOLine Line, bool State, bool Active)
+{
+    if (State ^ Active)
+    {
+        IOs[Line].GPIOx->BRR = 1 << (IOs[Line].GPIO_Pin);   //reset
+    }
+    else
+    {
+        IOs[Line].GPIOx->BSRR = 1 << (IOs[Line].GPIO_Pin);  //set
+    }
+}
+//---------------------------------------------------------------------------------
 void IO_ConfigLine(tIOLine Line, uint8_t Mode, uint8_t State)
 {
     if(IOs[Line].GPIO_Pin < 8)

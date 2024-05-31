@@ -37,42 +37,72 @@
 //										      Value   Level   Level   |                         |
 //														     or Mask  |                         |
 #define MB_BUF_TABLE\
-	X_BUF(0,	REG_0,		            0,		0,		0,      0,      READ_R)\
-    X_BUF(1,	REG_CUR_MID,            0,	    0,	    0,		0,	    READ_R)\
-    X_BUF(2,	REG_CUR_DIDT,           0,	    0,	    0,		0,	    READ_R)\
+	X_BUF(0,	REG_0,                  0,		0,		0,      0,      READ_R)\
+	X_BUF(1,	REG_VOLT_INST,          0,	    0,	    0,		0,	    READ_R)\
+    X_BUF(2,	REG_VOLT_MID,           0,	    0,	    0,		0,	    READ_R)\
     X_BUF(3,	REG_CUR_INST,           0,	    0,	    0,		0,	    READ_R)\
-    X_BUF(4,	REG_VOLT_INST,          0,	    0,	    0,		0,	    READ_R)\
-    X_BUF(5,	REG_RESET,      	    0,	    0,	    0,		0,	    WRITE_R)\
-    X_BUF(9,	REG_USER_CONTROL,       0,	    0,	    0,		0,	    WRITE_R)\
-	X_BUF(15,	REG_CUR_TEST,           0,	    0,	    0,		0xFFFF,	WRITE_R | CB_WR)\
-    X_BUF(16,	REG_CUR_ADD,			0,	    0,      0,      0,      WRITE_R | CB_WR)\
-	X_BUF(18,	REG_DI_Bit,             0,	    0,	    0,		0,	    READ_R)\
-    X_BUF(20,	REG_CUR_MAX_P,          0,	    0,	    0,		20000,  WRITE_R | CB_WR | LIM_UNSIGN)\
-    X_BUF(21,	REG_CUR_MAX_N,          0,	    0,	    0,		20000,  WRITE_R | CB_WR | LIM_UNSIGN)\
-    X_BUF(22,	REG_CUR_OL_P_VALUE,     0,      0,	    0,		20000,  WRITE_R | CB_WR | LIM_UNSIGN)\
-    X_BUF(23,	REG_CUR_OL_P_TIME_MS,   0,	    0,	    0,	    100,    WRITE_R | CB_WR | LIM_UNSIGN)\
-    X_BUF(24,	REG_CUR_OL_N_VALUE,     0,      0,	    0,		20000,  WRITE_R | CB_WR | LIM_UNSIGN)\
-    X_BUF(25,	REG_CUR_OL_N_TIME_MS,   0,	    0,	    0,	    100,    WRITE_R | CB_WR | LIM_UNSIGN)\
-    X_BUF(26,	REG_CUR_DIDT_P_VALUE,   0,      0,	    0,		20000,  WRITE_R | CB_WR | LIM_UNSIGN)\
-    X_BUF(27,	REG_CUR_DIDT_P_TIME_MS, 0,	    0,	    0,	    100,    WRITE_R | CB_WR | LIM_UNSIGN)\
-    X_BUF(28,	REG_CUR_DIDT_N_VALUE,   0,      0,	    0,		20000,  WRITE_R | CB_WR | LIM_UNSIGN)\
-    X_BUF(29,	REG_CUR_DIDT_N_TIME_MS, 0,	    0,	    0,	    100,    WRITE_R | CB_WR | LIM_UNSIGN)\
-    X_BUF(30,	REG_DO_1_BIT_PROTECTION,0,	    0,	    0,		0xFFFF, WRITE_R | CB_WR | LIM_UNSIGN)\
-    X_BUF(31,	REG_DO_2_BIT_PROTECTION,0,	    0,	    0,		0xFFFF, WRITE_R | CB_WR | LIM_UNSIGN)\
-    X_BUF(32,	REG_CUR_SHUNT_MV,       0,	    60,	    0,		0xFFFF, WRITE_R | CB_WR | LIM_UNSIGN)\
-    X_BUF(33,	REG_CUR_SHUNT_A,        0,	    5000,   0,		0xFFFF, WRITE_R | CB_WR | LIM_UNSIGN)\
-    X_BUF(34,	REG_CUR_R_1_HOHM_OA_1,  0,	    0,	    0,		0xFFFF,	WRITE_R | CB_WR)\
-    X_BUF(35,	REG_CUR_R_2_HOHM_OA_1,  0,	    0,	    0,		0xFFFF,	WRITE_R | CB_WR)\
-    X_BUF(36,	REG_CUR_R_1_HOHM_OA_2,  0,	    0,	    0,		0xFFFF,	WRITE_R | CB_WR)\
-    X_BUF(37,	REG_CUR_R_2_HOHM_OA_2,  0,	    0,	    0,		0xFFFF,	WRITE_R | CB_WR)\
-	X_BUF(50,	REG_RS_BAUD,	        0,		1,		0,		0x03,	WRITE_R | CB_WR | LIM_MASK)\
-	X_BUF(51,	REG_RS_DELAY,           0,	    5,		0,      100,	WRITE_R | CB_WR | LIM_UNSIGN)\
-	X_BUF(52,	REG_RS_ADDR,            0,		1,		1,		0xFA,	WRITE_R | CB_WR | LIM_UNSIGN)\
-	X_BUF(53,	REG_RS_PARITY_STOP, 	0,	    0,	    0,		0x03,	WRITE_R | CB_WR | LIM_UNSIGN)\
+    X_BUF(4,	REG_CUR_MID,            0,	    0,	    0,		0,	    READ_R)\
+    X_BUF(5,	REG_CUR_DIDT,           0,	    0,	    0,		0,	    READ_R)\
+    X_BUF(6,	REG_CUR_MID_MV,         0,	    0,	    0,		0,	    READ_R)\
+    X_BUF(9,	REG_STARTRACK,      	0,	    0,	    0,		0,	    WRITE_R)\
+    X_BUF(10,	REG_ALARM,              0,	    0,	    0,		0,	    READ_R)\
+    X_BUF(11,	REG_TRIG_ALARM,         0,	    0,	    0,		0,	    READ_R)\
+ 	X_BUF(12,	REG_DI_STATUS,          0,	    0,	    0,		0,	    READ_R)\
+    X_BUF(13,	REG_DO_STATUS,          0,	    0,	    0,		0,	    READ_R)\
+    X_BUF(14,	REG_MEASURE_LAN_ERROR,  0,      0,	    0,		0,	    READ_R)\
+    X_BUF(15,	REG_PROTECTION_RESET,   0,	    0,	    0,		0,	    WRITE_R)\
+    X_BUF(16,	REG_CALIB,      	    0,	    0,	    0,		0,	    WRITE_R)\
+    X_BUF(18,	REG_SET_AUTO_RESET,     0,	    0,      0,      0,      WRITE_R | CB_WR)\
+    X_BUF(19,	REG_AUTO_RESET_S,       0,	    0,      0,      0,      WRITE_R | CB_WR)\
+    X_BUF(20,	REG_CUR_SHUNT_MV,       0,	    600,    100,    2000,   WRITE_R | CB_WR | LIM_UNSIGN)\
+    X_BUF(21,	REG_CUR_SHUNT_A,        0,	    5000,   10,		10000,  WRITE_R | CB_WR | LIM_UNSIGN)\
+    X_BUF(23,	REG_DELTA_V_VALUE,      0,	    15,	    0,		0xFFFF, WRITE_R | CB_WR)\
+    X_BUF(24,	REG_CALIB_MID_VALUE,    0,	    0,	    0,		0xFFFF, WRITE_R | CB_WR)\
+    X_BUF(25,	REG_CALIB_INST_VALUE,   0,	    0,	    0,		0xFFFF, WRITE_R | CB_WR)\
+    X_BUF(26,	REG_CALIB_V_MID_VALUE,  0,	    0,	    0,		0xFFFF, WRITE_R | CB_WR)\
+    X_BUF(30,	REG_RS_BAUD,	        0,		1,		0,		0x03,	WRITE_R | CB_WR | LIM_MASK)\
+	X_BUF(31,	REG_RS_DELAY,           0,	    5,		0,      100,	WRITE_R | CB_WR | LIM_UNSIGN)\
+	X_BUF(32,	REG_RS_ADDR,            0,		1,		1,		0xFA,	WRITE_R | CB_WR | LIM_UNSIGN)\
+	X_BUF(33,	REG_RS_PARITY_STOP, 	0,	    0,	    0,		0x03,	WRITE_R | CB_WR | LIM_UNSIGN)\
+    X_BUF(35,	REG_RESET_TO_DEFAULT,   0,	    0,	    0,		0,	    WRITE_R)\
+    X_BUF(36,	REG_DATA_SAVE,          0,	    0,	    0,		0,	    WRITE_R)\
+    X_BUF(38,	REG_EXTERNAL_ALARM,     0,	    0,	    0,	    0,      WRITE_R)\
+    X_BUF(40,	REG_PROTECT_ENABLE_BIT, 0,	    0,	    0,		PR_ALARM_ALL_MSK,\
+                                                                        WRITE_R | CB_WR | LIM_MASK)\
+    X_BUF(42,	REG_CUR_MAX_P,          0,	    0,	    0,		20000,  WRITE_R | CB_WR | LIM_UNSIGN)\
+    X_BUF(43,	REG_CUR_MAX_N,          0,	    0,	    0,		20000,  WRITE_R | CB_WR | LIM_UNSIGN)\
+    X_BUF(44,	REG_CUR_OL_P_VALUE,     0,      0,	    0,		20000,  WRITE_R | CB_WR | LIM_UNSIGN)\
+    X_BUF(45,	REG_CUR_OL_P_TIME_MS,   0,	    0,	    0,	    60000,  WRITE_R | CB_WR | LIM_UNSIGN)\
+    X_BUF(46,	REG_CUR_OL_N_VALUE,     0,      0,	    0,		20000,  WRITE_R | CB_WR | LIM_UNSIGN)\
+    X_BUF(47,	REG_CUR_OL_N_TIME_MS,   0,	    0,	    0,	    60000,  WRITE_R | CB_WR | LIM_UNSIGN)\
+    X_BUF(48,	REG_CUR_DIDT_P_VALUE,   0,      0,	    0,		20000,  WRITE_R | CB_WR | LIM_UNSIGN)\
+    X_BUF(49,	REG_CUR_DIDT_P_TIME_MS, 0,	    0,	    0,	    60000,  WRITE_R | CB_WR | LIM_UNSIGN)\
+    X_BUF(50,	REG_CUR_DIDT_N_VALUE,   0,      0,	    0,		20000,  WRITE_R | CB_WR | LIM_UNSIGN)\
+    X_BUF(51,	REG_CUR_DIDT_N_TIME_MS, 0,	    0,	    0,	    60000,  WRITE_R | CB_WR | LIM_UNSIGN)\
+    X_BUF(52,	REG_VOLT_MIN,           0,	    0,	    -2000,	2000,   WRITE_R | CB_WR | LIM_SIGN)\
+    X_BUF(53,	REG_VOLT_MIN_TIME_MS,   0,	    0,	    0,	    60000,  WRITE_R | CB_WR | LIM_UNSIGN)\
+    X_BUF(54,	REG_VOLT_MAX,           0,	    0,	    -2000,	2000,   WRITE_R | CB_WR | LIM_SIGN)\
+    X_BUF(55,	REG_VOLT_MAX_TIME_MS,   0,	    0,	    0,	    60000,  WRITE_R | CB_WR | LIM_UNSIGN)\
+    X_BUF(61,	REG_DI_1_MODE,          0,	    0,	    0,	    0,      WRITE_R | CB_WR)\
+    X_BUF(62,	REG_DI_2_MODE,          0,	    0,	    0,	    0,      WRITE_R | CB_WR)\
+    X_BUF(63,	REG_DI_3_MODE,          0,	    0,	    0,	    0,      WRITE_R | CB_WR)\
+    X_BUF(64,	REG_DI_4_MODE,          0,	    0,	    0,	    0,      WRITE_R | CB_WR)\
+    X_BUF(71,	REG_DO_1_MODE,          0,	    0,	    0,	    0,      WRITE_R | CB_WR)\
+    X_BUF(72,	REG_DO_2_MODE,          0,	    0,	    0,	    0,      WRITE_R | CB_WR)\
+    X_BUF(73,	REG_DO_3_MODE,          0,	    0,	    0,	    0,      WRITE_R | CB_WR)\
+    X_BUF(74,	REG_DO_4_MODE,          0,	    0,	    0,	    0,      WRITE_R | CB_WR)\
+    X_BUF(75,	REG_DO_1_ALARM_MSK,     0,	    0,	    0,	    0,      WRITE_R | CB_WR)\
+    X_BUF(76,	REG_DO_2_ALARM_MSK,     0,	    0,	    0,	    0,      WRITE_R | CB_WR)\
+    X_BUF(77,	REG_DO_3_ALARM_MSK,     0,	    0,	    0,	    0,      WRITE_R | CB_WR)\
+    X_BUF(78,	REG_DO_4_ALARM_MSK,     0,	    0,	    0,	    0,      WRITE_R | CB_WR)\
+    X_BUF(80,	REG_DO_ON,              0,	    0,	    0,		0,	    WRITE_R)\
+    X_BUF(81,	REG_DO_OFF,             0,	    0,	    0,		0,	    WRITE_R)\
     X_BUF(97,	REG_GOTRACK,      	    0,	    0,	    0,		0,	    WRITE_R)\
-	X_BUF(98,	REG_STARTRACK,      	0,	    0,	    0,		0,	    WRITE_R)\
-	X_BUF(99,	REG_COUNTRACK,			0,	    0,      0,      0,      READ_R)\
-	X_BUF(TRACK_VOLT_REG_START + TRACK_VOLT_REG_NUM,	Reg_End,				0,	    0,      0,      0,      READ_R)\
-
+	X_BUF(99,	REG_TRECK_SCALE,        0,	    0,      0,      3,      WRITE_R | CB_WR | LIM_UNSIGN)\
+	X_BUF(TRACK_CUR_REG_START,\
+                REG_TRECK_START,	    0,	    0,      0,      0,      READ_R)\
+	X_BUF(TRACK_VOLT_REG_START + TRACK_POINT_NUM,\
+                REG_TRECK_END,          0,	    0,      0,      0,      READ_R)\
+	X_BUF(1129,	Reg_End,				0,	    0,      0,      0,      READ_R)\
 
 #endif /* MODBUS_X_H_INCLUDED */

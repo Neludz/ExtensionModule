@@ -16,7 +16,7 @@
 	"portable.h"
 	<reent.h>
 
-1707816348 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\include\freertosconfig.h
+1713782503 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\include\freertosconfig.h
 
 1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\include\projdefs.h
 
@@ -410,10 +410,11 @@
 	"main.h"
 	"stm32f1xx.h"
 
-1707816322 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\main.h
+1716895204 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\main.h
 	"FreeRTOS.h"
 	"timers.h"
 	"clock.h"
+	<stdbool.h>
 
 1706084494 d:\dropbox\gg\smtn\code\raspberry_extension_board\ll\inc\stm32f1xx_ll_conf.h
 	"stm32f1xx.h"
@@ -539,7 +540,7 @@
 1678699683 d:\dropbox\gg\smtn\code\raspberry_extension_board\libraries\freertos\include\semphr.h
 	"queue.h"
 
-1707911371 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\main.c
+1716895179 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\main.c
 	"main.h"
 	<modbus_reg.h>
 	<modbus_hard.h>
@@ -614,7 +615,7 @@
 
 1706087690 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\clock.h
 
-1707736561 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\io.c
+1716552346 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\io.c
 	<stdint.h>
 	<stdbool.h>
 	"stm32f1xx_ll_usart.h"
@@ -622,23 +623,23 @@
 	<IO.h>
 	<main.h>
 
-1707736561 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\io.h
+1714401116 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\io.h
 	<stdint.h>
 	<stdbool.h>
 	<stm32f1xx.h>
 
-1679994391 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\modbus_reg.h
+1713775794 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\modbus_reg.h
 	<stdint.h>
 	"modbus_config.h"
 	"modbus.h"
 
-1707838338 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\modbus_config.h
+1716807888 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\modbus_config.h
 	<stdint.h>
 	"main.h"
 	"modbus_hard.h"
 	"optic_current_data.h"
 
-1707141777 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\modbus_hard.h
+1716967915 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\modbus_hard.h
 	"FreeRTOS.h"
 	"semphr.h"
 	"task.h"
@@ -661,13 +662,13 @@
 	"stm32f1xx_hal.h"
 	"usbd_def.h"
 
-1688038601 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\modbus.c
+1714982989 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\modbus.c
 	"modbus.h"
 	"modbus_config.h"
 	<stdio.h>
 	"modbus_reg.h"
 
-1707293551 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\modbus_hard.c
+1716893657 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\modbus_hard.c
 	"modbus_hard.h"
 	"modbus.h"
 	"modbus_reg.h"
@@ -766,9 +767,9 @@
 	"stm32f1xx.h"
 	<stdio.h>
 
-1707914039 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\optic_current_data.h
+1716891030 d:\dropbox\gg\smtn\code\raspberry_extension_board\src\optic_current_data.h
 
-1708354814 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\optic_current_data.c
+1716906134 source:d:\dropbox\gg\smtn\code\raspberry_extension_board\src\optic_current_data.c
 	"main.h"
 	<modbus_reg.h>
 	<modbus_hard.h>
@@ -785,4 +786,5 @@
 	"limits.h"
 	"IO.h"
 	"optic_current_data.h"
+	<eeprom_emulation.h>
 

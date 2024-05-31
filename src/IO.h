@@ -39,7 +39,7 @@ typedef struct
 	X_IO(IO_LED_STATUS,		GPIOA,	15,			OUT_2MHz,	OUT_PP,		LOW,  	HIGH)	\
 	X_IO(IO_LED_ALARM,		GPIOB,	3,			OUT_2MHz,	OUT_PP,		LOW,  	HIGH)	\
 	X_IO(IO_LED_IN,			GPIOA,	4,			OUT_2MHz,	OUT_PP,		LOW,  	HIGH)	\
-	X_IO(IO_LED_OUT,		GPIOA,	0,			OUT_2MHz,	OUT_PP,		LOW,  	HIGH)	\
+	X_IO(IO_LED_MEASURE_LAN,GPIOA,	0,			OUT_2MHz,	OUT_PP,		LOW,  	HIGH)	\
 	X_IO(IO_RS485_SWITCH,	GPIOB,  1, 			OUT_2MHz,	OUT_PP,  	LOW,  	HIGH)	\
 	X_IO(IO_RX,				GPIOB,  11, 		IN,			IN_HIZ,  	HIGH,  	HIGH)	\
 	X_IO(IO_TX,				GPIOB,  10, 		OUT_50MHz,	OUT_APP, 	HIGH,  	HIGH)	\
@@ -48,11 +48,10 @@ typedef struct
 	X_IO(IO_DI_2,			GPIOB,  13,  		IN,			IN_PULL,	HIGH,  	LOW)	\
 	X_IO(IO_DI_3,			GPIOA,  8,  		IN,			IN_PULL,   	HIGH,  	LOW)	\
 	X_IO(IO_DI_4,			GPIOB,  15,  		IN,			IN_PULL,    HIGH,  	LOW)	\
-	X_IO(IO_DO_1,			GPIOB,  5,  		OUT_50MHz,	OUT_PP,		LOW,  	HIGH)	\
-	X_IO(IO_DO_2,			GPIOB,  4,  		OUT_50MHz,	OUT_PP,		LOW,  	HIGH)	\
-	X_IO(IO_DO_3,			GPIOB,  0,  		OUT_50MHz,	OUT_PP,		LOW,  	HIGH)	\
-	X_IO(IO_DO_4,			GPIOB,  2,  		OUT_50MHz,	OUT_PP,		LOW,  	HIGH)	\
-
+	X_IO(IO_DO_1,			GPIOB,  4,  		OUT_50MHz,	OUT_PP,		LOW,  	HIGH)	\
+	X_IO(IO_DO_2,			GPIOB,  5,  		OUT_50MHz,	OUT_PP,		LOW,  	HIGH)	\
+	X_IO(IO_DO_3,			GPIOB,  2,  		OUT_50MHz,	OUT_PP,		LOW,  	HIGH)	\
+	X_IO(IO_DO_4,			GPIOB,  0,  		OUT_50MHz,	OUT_PP,		LOW,  	HIGH)	\
 
 //USB pins init in default state
 //------========IO_End_Table========------
@@ -82,6 +81,7 @@ bool IO_GetLineActive(uint8_t Input);
 void IO_ConfigLine(tIOLine Line, uint8_t Mode, uint8_t State);
 void IO_SPI_Init(void);
 void IO_delay_ms(uint32_t ms);
+void IO_SetLineActiveExtern(tIOLine Line, bool State, bool Active);
 
 //example
 //     	i = IO_GetLine(io_LED3);
